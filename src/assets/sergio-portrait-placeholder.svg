@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 400" width="320" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#25211e"/>
+      <stop offset="100%" stop-color="#171513"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D86A45" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D7D27A" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Frame -->
+  <rect width="320" height="400" rx="12" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="318" height="398" rx="11" fill="none" stroke="#D86A45" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="6 4"/>
+  
+  <!-- Silhouette Vector -->
+  <circle cx="160" cy="140" r="54" fill="#322d29"/>
+  <path d="M70 330 C70 230, 250 230, 250 330 Z" fill="#322d29"/>
+  
+  <!-- Camera / Portrait Icon Accent -->
+  <circle cx="160" cy="140" r="26" fill="url(#accentGrad)" stroke="#D86A45" stroke-width="1.5"/>
+  <path d="M150 145 L154 135 L166 135 L170 145 Z" fill="#D86A45" opacity="0.8"/>
+  <rect x="146" y="143" width="28" height="18" rx="3" fill="none" stroke="#E9E5DA" stroke-width="1.5"/>
+  <circle cx="160" cy="152" r="5" fill="#D86A45"/>
+
+  <!-- Label Box -->
+  <rect x="30" y="325" width="260" height="44" rx="6" fill="#171513" stroke="#D86A45" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="160" y="344" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#E9E5DA" text-anchor="middle" letter-spacing="0.5">ESPACIO PARA FOTOGRAFÍA PERSONAL</text>
+  <text x="160" y="358" font-family="'JetBrains Mono', monospace" font-size="9" fill="#D7D27A" text-anchor="middle">Sergio Andrés Gómez López</text>
+</svg>

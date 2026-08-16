@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAGL — Sergio Andrés Gómez López | Ingeniería en Multimedia</title>
+  <meta name="description" content="Portafolio profesional de Sergio Andrés Gómez López (SAGL), profesional en Ingeniería en Multimedia disponible para prácticas profesionales. 3D, Realidad Aumentada, VR, Diseño Gráfico y Postproducción.">
+  <link rel="icon" type="image/svg+xml" href="src/assets/favicon.svg">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SAGL — Sergio Andrés Gómez López | Ingeniería en Multimedia">
+  <meta property="og:description" content="Portafolio profesional de Sergio Andrés Gómez López (SAGL), Ingeniería en Multimedia disponible para prácticas profesionales.">
+  <meta property="og:site_name" content="SAGL Portfolio">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="src/css/variables.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/pages.css">
+</head>
+<body>
+
+  <!-- Cabecera del sitio & Wordmark Global SAGL -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-wordmark" aria-label="SAGL — Regresar al Inicio">
+        <span class="brand-letters">SAGL</span>
+        <span class="home-hint">Inicio</span>
+      </a>
+
+      <nav class="main-nav desktop-only" role="navigation" aria-label="Navegación principal">
+        <a href="work/index.html" class="nav-link">
+          <span class="nav-num">I</span> TRABAJOS
+        </a>
+        <a href="about/index.html" class="nav-link">
+          <span class="nav-num">II</span> SOBRE MÍ
+        </a>
+        <a href="contact/index.html" class="nav-link">
+          <span class="nav-num">III</span> CONTACTO
+        </a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menú móvil">
+    <div class="mobile-drawer-links">
+      <a href="work/index.html" class="nav-link"><span class="nav-num">I</span> TRABAJOS</a>
+      <a href="about/index.html" class="nav-link"><span class="nav-num">II</span> SOBRE MÍ</a>
+      <a href="contact/index.html" class="nav-link"><span class="nav-num">III</span> CONTACTO</a>
+    </div>
+  </div>
+
+  <!-- Contenido Principal -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="home-hero">
+      <div class="container hero-grid">
+        <!-- Columna de Información Principal -->
+        <div class="hero-content">
+          <div class="hero-pretitle">
+            <span class="internship-pill">
+              <span class="pulse-dot"></span> DISPONIBLE PARA PRÁCTICAS PROFESIONALES
+            </span>
+          </div>
+
+          <h1 class="hero-name">
+            Sergio Andrés <br>
+            <span class="accent-word">Gómez López</span>
+          </h1>
+
+          <p class="hero-discipline">
+            Ingeniería en Multimedia &middot; Perfil Multidisciplinario
+          </p>
+
+          <p>
+            Desarrollo e integración de experiencias visuales e interactivas: modelado 3D, Realidad Aumentada, entornos inmersivos de Realidad Virtual, sistemas de diseño gráfico, producción audiovisual y desarrollo web frontend.
+          </p>
+
+          <div class="hero-areas" aria-label="Áreas de especialidad">
+            <span class="hero-area-tag">3D MODELING</span>
+            <span class="hero-area-tag">AR / VR</span>
+            <span class="hero-area-tag">DISEÑO GRÁFICO</span>
+            <span class="hero-area-tag">POSTPRODUCCIÓN</span>
+            <span class="hero-area-tag">FRONTEND</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="work/index.html" class="btn btn-primary">
+              Explorar Trabajos <span aria-hidden="true">&rarr;</span>
+            </a>
+            <a href="contact/index.html" class="btn btn-secondary">
+              Contactar para Prácticas
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna Multimedia: Espacio para Fotografía Personal + Explorador Interactivo de Disciplinas -->
+        <div class="hero-media-side">
+          <!-- Contenedor reservado para la fotografía personal de Sergio -->
+          <div class="hero-portrait-frame" title="Espacio para fotografía personal de Sergio">
+            <img src="src/assets/sergio-portrait-placeholder.svg" alt="Espacio reservado para fotografía personal de Sergio Andrés Gómez López" class="hero-portrait-img">
+            <div class="portrait-caption">
+              <span class="portrait-author">Sergio Andrés Gómez López</span>
+              <span class="portrait-role">Ingeniería en Multimedia</span>
+            </div>
+          </div>
+
+          <!-- Objeto Multimedia Interactivo SAGL (Resumen del perfil multimedia de Sergio) -->
+          <div class="hero-orbit-panel">
+            <div class="hero-orbit-container" aria-label="Núcleo interactivo del perfil multimedia de Sergio">
+              <canvas id="hero-orbit-canvas" class="hero-orbit-canvas"></canvas>
+              <button class="orbit-center-core" id="orbit-core-btn" title="Haz click para alternar entre disciplinas multimedia" aria-label="Alternar disciplina activa">
+                <span class="core-monogram">SAGL</span>
+                <span class="core-subtext">MULTIMEDIA</span>
+              </button>
+            </div>
+
+            <!-- Selector rápido accesible de disciplinas -->
+            <div class="orbit-discipline-selector" role="tablist" aria-label="Selector de áreas multimedia">
+              <button class="orbit-tab-btn active" data-discipline="3D" role="tab" aria-selected="true">3D</button>
+              <button class="orbit-tab-btn" data-discipline="VR / AR" role="tab" aria-selected="false">AR / VR</button>
+              <button class="orbit-tab-btn" data-discipline="DISEÑO" role="tab" aria-selected="false">DISEÑO</button>
+              <button class="orbit-tab-btn" data-discipline="POST" role="tab" aria-selected="false">POST</button>
+              <button class="orbit-tab-btn" data-discipline="WEB" role="tab" aria-selected="false">WEB</button>
+            </div>
+
+            <!-- HUD de información interactiva con llamada a la acción -->
+            <div class="orbit-hud-card highlight" id="orbit-hud" aria-live="polite">
+              <span class="orbit-hud-eyebrow" id="orbit-hud-num">01 / MODELADO 3D</span>
+              <h4 id="orbit-hud-title">3D Modeling &amp; Props</h4>
+              <p id="orbit-hud-desc">7 Proyectos: Modelado low poly, props para tiempo real, optimización de malla y exportación para WebAR.</p>
+              <div class="orbit-cta-wrap">
+                <a href="work/3d.html" id="orbit-hud-link" class="btn btn-primary btn-sm">
+                  VER TRABAJOS DE 3D &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Directorio de Secciones del Inicio -->
+      <div class="container home-chapters">
+        <div class="chapter-grid">
+          <a href="work/index.html" class="chapter-card">
+            <span class="chapter-num">SECCIÓN I</span>
+            <h3>TRABAJOS</h3>
+            <p>Catálogo de proyectos organizados en 3D, Diseño Gráfico, Postproducción y VR/AR.</p>
+          </a>
+
+          <a href="about/index.html" class="chapter-card">
+            <span class="chapter-num">SECCIÓN II</span>
+            <h3>SOBRE MÍ</h3>
+            <p>Perfil académico, experiencia institucional en turismo y matriz interactiva de herramientas.</p>
+          </a>
+
+          <a href="contact/index.html" class="chapter-card">
+            <span class="chapter-num">SECCIÓN III</span>
+            <h3>CONTACTO</h3>
+            <p>Información de contacto directo para vinculación en pasantías y prácticas profesionales.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página Global -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-sagl">SAGL</span>
+        <p>Sergio Andrés Gómez López &mdash; Ingeniería en Multimedia</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navegación de pie de página">
+        <a href="work/index.html">Trabajos</a>
+        <a href="about/index.html">Sobre mí</a>
+        <a href="contact/index.html">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module">
+    import { initHeroOrbit } from "./src/js/components/hero-orbit.js";
+    initHeroOrbit("hero-orbit-canvas");
+  </script>
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

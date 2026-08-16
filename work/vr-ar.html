@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR & AR — SAGL | Sergio Andrés Gómez López</title>
+  <meta name="description" content="Proyectos de Realidad Aumentada y Realidad Virtual de Sergio Andrés Gómez López (SAGL): Oso Anteo WebAR Salazar de las Palmas, Skee-Ball VR Arcade y Lata Gladiador AR.">
+  <link rel="icon" type="image/svg+xml" href="../src/assets/favicon.svg">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VR & AR — SAGL | Sergio Andrés Gómez López">
+  <meta property="og:description" content="Experiencias inmersivas, WebAR para turismo patrimonial y arcades en Realidad Virtual de Sergio Andrés Gómez López.">
+  <meta property="og:site_name" content="SAGL Portfolio">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../src/css/variables.css">
+  <link rel="stylesheet" href="../src/css/base.css">
+  <link rel="stylesheet" href="../src/css/components.css">
+  <link rel="stylesheet" href="../src/css/lightbox.css">
+  <link rel="stylesheet" href="../src/css/pages.css">
+
+  <!-- Google <model-viewer> Library -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <!-- Cabecera del sitio & Wordmark Global SAGL -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-wordmark" aria-label="SAGL — Regresar al Inicio">
+        <span class="brand-letters">SAGL</span>
+        <span class="home-hint">Inicio</span>
+      </a>
+
+      <nav class="main-nav desktop-only" role="navigation" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link active">
+          <span class="nav-num">I</span> TRABAJOS
+        </a>
+        <a href="../about/index.html" class="nav-link">
+          <span class="nav-num">II</span> SOBRE MÍ
+        </a>
+        <a href="../contact/index.html" class="nav-link">
+          <span class="nav-num">III</span> CONTACTO
+        </a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menú móvil">
+    <div class="mobile-drawer-links">
+      <a href="index.html" class="nav-link active"><span class="nav-num">I</span> TRABAJOS</a>
+      <a href="../about/index.html" class="nav-link"><span class="nav-num">II</span> SOBRE MÍ</a>
+      <a href="../contact/index.html" class="nav-link"><span class="nav-num">III</span> CONTACTO</a>
+    </div>
+  </div>
+
+  <!-- Contenido Principal -->
+  <main id="main-content">
+    <header class="container category-page-header">
+      <div class="category-breadcrumb">
+        <a href="index.html">&larr; Volver a Trabajos</a> &middot; <span>04 / VR &amp; AR</span>
+      </div>
+      <span class="editorial-num">CATEGORÍA 04</span>
+      <h1>VR &amp; AR</h1>
+      <p>
+        Plataformas WebAR orientadas a difusión turística patrimonial, reconocimiento volumétrico mediante targets cilíndricos y modelado funcional de props para salones arcade en Realidad Virtual.
+      </p>
+    </header>
+
+    <div class="container">
+      <!-- 01 / Oso Anteo — WebAR Salazar de las Palmas -->
+      <article id="oso-anteo-webar" class="project-showcase-item">
+        <div class="project-media-col">
+          <!-- Video Demo -->
+          <div class="video-player-wrapper" style="margin-bottom: var(--space-4);">
+            <video controls preload="metadata" aria-label="Demostración de WebAR con el Oso Anteo en Salazar de las Palmas">
+              <source src="../Recursos/VR%20y%20AR/OsoAnteo/SalazarOso.mp4" type="video/mp4">
+              Tu navegador no soporta reproducción de video HTML5.
+            </video>
+          </div>
+
+          <!-- Interactive 3D Model -->
+          <div class="model-viewer-wrapper" style="height: 380px; margin-bottom: var(--space-4);">
+            <model-viewer 
+              src="../Recursos/3D/OsoAnteo.glb" 
+              alt="Personaje 3D interactivo Oso Anteo" 
+              auto-rotate 
+              camera-controls 
+              shadow-intensity="1"
+              exposure="1.05"
+              touch-action="pan-y">
+            </model-viewer>
+            <div class="model-controls-hint">
+              <span>&#10227; Personaje 3D Anteo</span>
+            </div>
+            <button class="model-fullscreen-btn" aria-label="Ver 3D en pantalla completa">&#x26F6;</button>
+          </div>
+
+          <!-- Capturas de la Plataforma Web -->
+          <h4 style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--accent-coral); margin-bottom: var(--space-2); text-transform: uppercase; letter-spacing: 0.1em;">
+            Capturas de la Plataforma Web
+          </h4>
+          <div class="project-gallery-grid" style="margin-bottom: var(--space-6);">
+            <div class="project-gallery-thumb" data-lightbox data-lightbox-group="salazar-web" data-src="../Recursos/VR%20y%20AR/OsoAnteo/Salazar1.png" data-title="Plataforma Web Salazar de las Palmas — Portada">
+              <img src="../Recursos/VR%20y%20AR/OsoAnteo/Salazar1.png" alt="Salazar Web 1">
+              <div class="thumb-overlay">&#128269; Ver interfaz</div>
+            </div>
+            <div class="project-gallery-thumb" data-lightbox data-lightbox-group="salazar-web" data-src="../Recursos/VR%20y%20AR/OsoAnteo/Salazar2.png" data-title="Plataforma Web Salazar de las Palmas — Información Patrimonial">
+              <img src="../Recursos/VR%20y%20AR/OsoAnteo/Salazar2.png" alt="Salazar Web 2">
+              <div class="thumb-overlay">&#128269; Ver patrimonio</div>
+            </div>
+            <div class="project-gallery-thumb" data-lightbox data-lightbox-group="salazar-web" data-src="../Recursos/VR%20y%20AR/OsoAnteo/Salazar3.png" data-title="Plataforma Web Salazar de las Palmas — Activador WebAR">
+              <img src="../Recursos/VR%20y%20AR/OsoAnteo/Salazar3.png" alt="Salazar Web 3">
+              <div class="thumb-overlay">&#128269; Ver módulo AR</div>
+            </div>
+          </div>
+
+          <!-- Image Targets Grid -->
+          <h4 style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--accent-olive); margin-bottom: var(--space-2); text-transform: uppercase; letter-spacing: 0.1em;">
+            Image Targets de Reconocimiento (Salazar de las Palmas)
+          </h4>
+          <div class="ar-targets-grid">
+            <div class="ar-target-card" data-lightbox data-lightbox-group="salazar-targets" data-src="../Recursos/VR%20y%20AR/OsoAnteo/Target7chorros.jpg.jpeg" data-title="Target AR: Los 7 Chorros">
+              <img src="../Recursos/VR%20y%20AR/OsoAnteo/Target7chorros.jpg.jpeg" alt="Target Los 7 Chorros">
+              <span>Los 7 Chorros</span>
+            </div>
+            <div class="ar-target-card" data-lightbox data-lightbox-group="salazar-targets" data-src="../Recursos/VR%20y%20AR/OsoAnteo/TargetIglesia.png" data-title="Target AR: Iglesia de Salazar">
+              <img src="../Recursos/VR%20y%20AR/OsoAnteo/TargetIglesia.png" alt="Target Iglesia">
+              <span>Iglesia de Salazar</span>
+            </div>
+            <div class="ar-target-card" data-lightbox data-lightbox-group="salazar-targets" data-src="../Recursos/VR%20y%20AR/OsoAnteo/TargetPatinaje.png" data-title="Target AR: Pista de Patinaje">
+              <img src="../Recursos/VR%20y%20AR/OsoAnteo/TargetPatinaje.png" alt="Target Patinaje">
+              <span>Pista de Patinaje</span>
+            </div>
+            <div class="ar-target-card" data-lightbox data-lightbox-group="salazar-targets" data-src="../Recursos/VR%20y%20AR/OsoAnteo/TargetPlaza.png" data-title="Target AR: Plaza Principal">
+              <img src="../Recursos/VR%20y%20AR/OsoAnteo/TargetPlaza.png" alt="Target Plaza">
+              <span>Plaza Principal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-info-col">
+          <div class="role-badge team">ROL: PROYECTO EN EQUIPO</div>
+          <h3>01 / Oso Anteo — WebAR Salazar de las Palmas</h3>
+          <p>
+            Proyecto desarrollado en equipo universitario en vinculación con la Secretaría de Turismo y la Gobernación de Norte de Santander. La iniciativa propone una solución interactiva de patrimonio turístico para el municipio de Salazar de las Palmas.
+          </p>
+          <p>
+            La experiencia integra una plataforma web institucional con un módulo de Realidad Aumentada móvil. Al enfocar cualquiera de los 4 Image Targets distribuidos en sitios de interés (Los 7 Chorros, la Iglesia, la Pista de Patinaje y la Plaza), el oso Anteo aparece en 3D ofreciendo narración cultural y orientación al visitante.
+          </p>
+
+          <ul class="project-highlights-list">
+            <li>4 Image Targets optimizados para reconocimiento en exteriores e interiores</li>
+            <li>Modelado y adaptación del personaje guía Anteo para WebAR</li>
+            <li>Integración de frontend web con metodologías de diseño UX (mapas de empatía y DOFA)</li>
+          </ul>
+
+          <div class="project-card-tools">
+            <span class="tool-tag">WebAR</span>
+            <span class="tool-tag">Vuforia</span>
+            <span class="tool-tag">Unity</span>
+            <span class="tool-tag">Blender</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 / Skee-Ball VR Arcade Machine -->
+      <article id="skee-ball-vr" class="project-showcase-item">
+        <div class="project-media-col">
+          <!-- Main capture -->
+          <div class="project-gallery-thumb" style="aspect-ratio: 16/10; margin-bottom: var(--space-4);" data-lightbox data-lightbox-group="skee-ball" data-src="../Recursos/VR%20y%20AR/Skee-Ball/Cap1.jpeg" data-title="Máquina Skee-Ball 3D en Entorno VR Arcade">
+            <img src="../Recursos/VR%20y%20AR/Skee-Ball/Cap1.jpeg" alt="Skee Ball VR 1">
+            <div class="thumb-overlay">&#128269; Ver en grande</div>
+          </div>
+
+          <!-- Secondary captures -->
+          <div class="project-gallery-grid">
+            <div class="project-gallery-thumb" data-lightbox data-lightbox-group="skee-ball" data-src="../Recursos/VR%20y%20AR/Skee-Ball/Captura2.jpeg" data-title="Skee-Ball VR — Vista lateral y rampa">
+              <img src="../Recursos/VR%20y%20AR/Skee-Ball/Captura2.jpeg" alt="Skee Ball VR 2">
+              <div class="thumb-overlay">&#128269; Detalle rampa</div>
+            </div>
+            <div class="project-gallery-thumb" data-lightbox data-lightbox-group="skee-ball" data-src="../Recursos/VR%20y%20AR/Skee-Ball/Captura3.jpeg" data-title="Skee-Ball VR — Integración en salón arcade">
+              <img src="../Recursos/VR%20y%20AR/Skee-Ball/Captura3.jpeg" alt="Skee Ball VR 3">
+              <div class="thumb-overlay">&#128269; Entorno arcade</div>
+            </div>
+            <div class="project-gallery-thumb" data-lightbox data-lightbox-group="skee-ball" data-src="../Recursos/VR%20y%20AR/Skee-Ball/Captura4.jpeg" data-title="Skee-Ball VR — Aros de puntuación">
+              <img src="../Recursos/VR%20y%20AR/Skee-Ball/Captura4.jpeg" alt="Skee Ball VR 4">
+              <div class="thumb-overlay">&#128269; Aros de juego</div>
+            </div>
+            <div class="project-gallery-thumb" data-lightbox data-lightbox-group="skee-ball" data-src="../Recursos/VR%20y%20AR/Skee-Ball/Captura5.jpeg" data-title="Skee-Ball VR — Perspectiva de inmersión en visor">
+              <img src="../Recursos/VR%20y%20AR/Skee-Ball/Captura5.jpeg" alt="Skee Ball VR 5">
+              <div class="thumb-overlay">&#128269; Perspectiva VR</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-info-col">
+          <div class="role-badge collaboration">ROL: COLABORACIÓN</div>
+          <h3>02 / Skee-Ball VR Arcade Machine</h3>
+          <p>
+            Proyecto de modelado 3D e integración interactiva de una máquina clásica de Skee-Ball funcional para un entorno temático de salón arcade en Realidad Virtual.
+          </p>
+          <p>
+            El proyecto global fue desarrollado en equipo; la responsabilidad de Sergio junto con un compañero consistió en el modelado 3D de la máquina, texturizado con acabados de madera y metal, y la programación en Unity de la física de rebote de bolas y lógica funcional de juego.
+          </p>
+
+          <ul class="project-highlights-list">
+            <li>Modelado 3D de precisión de la máquina arcade y aros de puntuación</li>
+            <li>Texturizado de materiales para visualización inmersiva en Realidad Virtual</li>
+            <li>Pruebas de física de impacto y funcionalidad en Unity</li>
+          </ul>
+
+          <div class="project-card-tools">
+            <span class="tool-tag">Unity</span>
+            <span class="tool-tag">Blender</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 / Lata Gladiador AR -->
+      <article id="lata-gladiador-ar" class="project-showcase-item">
+        <div class="project-media-col">
+          <div class="video-player-wrapper">
+            <video controls preload="metadata" aria-label="Demostración de Realidad Aumentada de Lata Gladiador">
+              <source src="../Recursos/VR%20y%20AR/Lata%20Gladiador.mp4" type="video/mp4">
+              Tu navegador no soporta reproducción de video HTML5.
+            </video>
+          </div>
+        </div>
+
+        <div class="project-info-col">
+          <div class="role-badge individual">ROL: INDIVIDUAL</div>
+          <h3>03 / Lata Gladiador AR Target</h3>
+          <p>
+            Demostración en video del reconocimiento volumétrico sobre lata real utilizando Vuforia Cylinder Target en Unity. Al identificar el perímetro de la lata física, el software renderiza el modelo tridimensional correspondiente e inicia la secuencia animada.
+          </p>
+
+          <div style="margin-top: var(--space-2); margin-bottom: var(--space-2);">
+            <a href="3d.html#lata-gladiador" class="btn btn-secondary btn-sm">
+              Ver modelo 3D interactivo en la sección 3D &rarr;
+            </a>
+          </div>
+
+          <div class="project-card-tools">
+            <span class="tool-tag">Vuforia</span>
+            <span class="tool-tag">Unity</span>
+            <span class="tool-tag">Blender</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Pie de página Global -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-sagl">SAGL</span>
+        <p>Sergio Andrés Gómez López &mdash; Ingeniería en Multimedia</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navegación de pie de página">
+        <a href="index.html">Trabajos</a>
+        <a href="../about/index.html">Sobre mí</a>
+        <a href="../contact/index.html">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module">
+    import { init3DViewers } from "../src/js/components/model-viewer-loader.js";
+    import { initLightbox } from "../src/js/components/lightbox.js";
+    
+    init3DViewers();
+    initLightbox();
+  </script>
+  <script type="module" src="../src/js/main.js"></script>
+</body>
+</html>

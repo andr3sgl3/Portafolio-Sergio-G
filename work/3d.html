@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D — SAGL | Sergio Andrés Gómez López</title>
+  <meta name="description" content="Proyectos de modelado 3D de Sergio Andrés Gómez López (SAGL): Lata Gladiador, Lata Impulso, Coliseo, Hoz, Oso Anteo, MicroWorld y Espada Low Poly.">
+  <link rel="icon" type="image/svg+xml" href="../src/assets/favicon.svg">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="3D — SAGL | Sergio Andrés Gómez López">
+  <meta property="og:description" content="Proyectos de modelado 3D, props low poly y visores interactivos de Sergio Andrés Gómez López.">
+  <meta property="og:site_name" content="SAGL Portfolio">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../src/css/variables.css">
+  <link rel="stylesheet" href="../src/css/base.css">
+  <link rel="stylesheet" href="../src/css/components.css">
+  <link rel="stylesheet" href="../src/css/lightbox.css">
+  <link rel="stylesheet" href="../src/css/pages.css">
+
+  <!-- Google <model-viewer> Library -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <!-- Cabecera del sitio & Wordmark Global SAGL -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-wordmark" aria-label="SAGL — Regresar al Inicio">
+        <span class="brand-letters">SAGL</span>
+        <span class="home-hint">Inicio</span>
+      </a>
+
+      <nav class="main-nav desktop-only" role="navigation" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link active">
+          <span class="nav-num">I</span> TRABAJOS
+        </a>
+        <a href="../about/index.html" class="nav-link">
+          <span class="nav-num">II</span> SOBRE MÍ
+        </a>
+        <a href="../contact/index.html" class="nav-link">
+          <span class="nav-num">III</span> CONTACTO
+        </a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menú móvil">
+    <div class="mobile-drawer-links">
+      <a href="index.html" class="nav-link active"><span class="nav-num">I</span> TRABAJOS</a>
+      <a href="../about/index.html" class="nav-link"><span class="nav-num">II</span> SOBRE MÍ</a>
+      <a href="../contact/index.html" class="nav-link"><span class="nav-num">III</span> CONTACTO</a>
+    </div>
+  </div>
+
+  <!-- Contenido Principal -->
+  <main id="main-content">
+    <header class="container category-page-header">
+      <div class="category-breadcrumb">
+        <a href="index.html">&larr; Volver a Trabajos</a> &middot; <span>01 / 3D</span>
+      </div>
+      <span class="editorial-num">CATEGORÍA 01</span>
+      <h1>3D</h1>
+      <p>
+        Modelado low poly, props para entornos interactivos, adaptación de geometrías para Realidad Aumentada y renderizado isométrico.
+      </p>
+    </header>
+
+    <div class="container">
+      <!-- 01 / Lata Gladiador -->
+      <article id="lata-gladiador" class="project-showcase-item">
+        <div class="project-media-col">
+          <div class="model-viewer-wrapper">
+            <model-viewer 
+              src="../Recursos/3D/Latas/Lata%20Gladiador.glb" 
+              alt="Modelo 3D interactivo de Lata Gladiador" 
+              auto-rotate 
+              camera-controls 
+              shadow-intensity="1"
+              exposure="1.05"
+              touch-action="pan-y">
+            </model-viewer>
+            <div class="model-controls-hint">
+              <span>&#10227; Arrastra para rotar &middot; Scroll para zoom</span>
+            </div>
+            <button class="model-fullscreen-btn" aria-label="Ver 3D en pantalla completa">&#x26F6;</button>
+          </div>
+
+          <div style="margin-top: var(--space-4);">
+            <div class="video-player-wrapper">
+              <video controls preload="metadata" aria-label="Demostración de Realidad Aumentada sobre la lata">
+                <source src="../Recursos/VR%20y%20AR/Lata%20Gladiador.mp4" type="video/mp4">
+                Tu navegador no soporta el reproductor de video HTML5.
+              </video>
+            </div>
+            <p style="font-size: var(--text-xs); color: var(--text-tertiary); margin-top: var(--space-2); text-align: center;">
+              Demostración real de Cylinder Target con Vuforia en Unity.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-info-col">
+          <div class="role-badge individual">ROL: INDIVIDUAL</div>
+          <h3>01 / Lata Gladiador</h3>
+          <p>
+            Proyecto individual de Realidad Aumentada donde una lata física real es reconocida mediante un Cylinder Target en Vuforia. Al detectar la lata, el modelo 3D desarrollado en Blender sustituye visualmente el objeto real e inicia una animación interactiva dentro de Unity.
+          </p>
+
+          <ul class="project-highlights-list">
+            <li>Integración entre modelado 3D y Realidad Aumentada volumétrica</li>
+            <li>Reconocimiento de superficie cilíndrica (Cylinder Target)</li>
+            <li>Sincronización de eventos de animación en Unity</li>
+          </ul>
+
+          <div class="project-card-tools">
+            <span class="tool-tag">Blender</span>
+            <span class="tool-tag">Unity</span>
+            <span class="tool-tag">Vuforia</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 / Lata Impulso -->
+      <article id="lata-impulso" class="project-showcase-item">
+        <div class="project-media-col">
+          <div class="model-viewer-wrapper">
+            <model-viewer 
+              src="../Recursos/3D/Latas/Lata%20Impulso.glb" 
+              alt="Modelo 3D interactivo de Lata Impulso" 
+              auto-rotate 
+              camera-controls 
+              shadow-intensity="1"
+              exposure="1.05"
+              touch-action="pan-y">
+            </model-viewer>
+            <div class="model-controls-hint">
+              <span>&#10227; Arrastra para rotar &middot; Scroll para zoom</span>
+            </div>
+            <button class="model-fullscreen-btn" aria-label="Ver 3D en pantalla completa">&#x26F6;</button>
+          </div>
+        </div>
+
+        <div class="project-info-col">
+          <div class="role-badge individual">ROL: INDIVIDUAL</div>
+          <h3>02 / Lata Impulso</h3>
+          <p>
+            Proyecto individual centrado en la creación de una marca imaginaria y su correspondiente experiencia sencilla de Realidad Aumentada. El modelo 3D fue modelado en Blender e integrado con un target en Vuforia para desencadenar la animación en Unity.
+          </p>
+
+          <ul class="project-highlights-list">
+            <li>Modelado y mapeado UV de lata en Blender</li>
+            <li>Configuración de target interactivo en Unity con Vuforia</li>
+          </ul>
+
+          <div class="project-card-tools">
+            <span class="tool-tag">Blender</span>
+            <span class="tool-tag">Unity</span>
+            <span class="tool-tag">Vuforia</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 / Coliseo -->
+      <article id="coliseo" class="project-showcase-item">
+        <div class="project-media-col">
+          <div class="model-viewer-wrapper">
+            <model-viewer 
+              alt="Modelo 3D interactivo del Coliseo Low Poly" 
+              auto-rotate 
+              camera-controls 
+              shadow-intensity="1"
+              exposure="1.05"
+              touch-action="pan-y">
+            </model-viewer>
+
+            <!-- Carga bajo demanda para archivo de ~318MB -->
+            <div class="model-lazy-overlay">
+              <span class="filesize-tag">ARCHIVO 3D: ~318 MB</span>
+              <p>Modelo arquitectónico low poly con geometría detallada de graderías y arcos perimetrales.</p>
+              <button class="btn btn-primary load-3d-btn" data-src="../Recursos/3D/Coliseo.glb">
+                Cargar Modelo 3D Interactivo
+              </button>
+            </div>
+
+            <button class="model-fullscreen-btn" aria-label="Ver 3D en pantalla completa">&#x26F6;</button>
+          </div>
+        </div>
+
+        <div class="project-info-col">
+          <div class="role-badge individual">ROL: INDIVIDUAL</div>
+          <h3>03 / Coliseo</h3>
+          <p>
+            Modelo 3D low poly desarrollado individualmente, inspirado en una representación basada en la película Gladiador. Muestra la estructuración de la arena, pasillos perimetrales y arcos modulares.
+          </p>
+
+          <ul class="project-highlights-list">
+            <li>Modelado modular de graderías y arcos de piedra</li>
+            <li>Optimización de topología low poly</li>
+          </ul>
+
+          <div class="project-card-tools">
+            <span class="tool-tag">Blender</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 / Hoz -->
+      <article id="hoz" class="project-showcase-item">
+        <div class="project-media-col">
+          <div class="model-viewer-wrapper">
+            <model-viewer 
+              src="../Recursos/3D/Hoz.glb" 
+              alt="Modelo 3D interactivo de Hoz" 
+              auto-rotate 
+              camera-controls 
+              shadow-intensity="1"
+              exposure="1.05"
+              touch-action="pan-y">
+            </model-viewer>
+            <div class="model-controls-hint">
+              <span>&#10227; Arrastra para rotar &middot; Scroll para zoom</span>
+            </div>
+            <button class="model-fullscreen-btn" aria-label="Ver 3D en pantalla completa">&#x26F6;</button>
+          </div>
+        </div>
+
+        <div class="project-info-col">
+          <div class="role-badge individual">ROL: INDIVIDUAL</div>
+          <h3>04 / Hoz</h3>
+          <p>
+            Modelo 3D de una hoz realizado en Blender como proyecto individual. El enfoque del modelado se centró en la curvatura de la hoja cortante, la empuñadura ergonómica y la definición de cantos.
+          </p>
+
+          <ul class="project-highlights-list">
+            <li>Modelado de prop en Blender con geometría limpia</li>
+            <li>Preparación de malla para visualización en tiempo real</li>
+          </ul>
+
+          <div class="project-card-tools">
+            <span class="tool-tag">Blender</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 / Oso Anteo -->
+      <article id="oso-anteo-3d" class="project-showcase-item">
+        <div class="project-media-col">
+          <div class="model-viewer-wrapper">
+            <model-viewer 
+              src="../Recursos/3D/OsoAnteo.glb" 
+              alt="Modelo 3D interactivo de Oso Anteo" 
+              auto-rotate 
+              camera-controls 
+              shadow-intensity="1"
+              exposure="1.05"
+              touch-action="pan-y">
+            </model-viewer>
+            <div class="model-controls-hint">
+              <span>&#10227; Arrastra para rotar &middot; Scroll para zoom</span>
+            </div>
+            <button class="model-fullscreen-btn" aria-label="Ver 3D en pantalla completa">&#x26F6;</button>
+          </div>
+        </div>
+
+        <div class="project-info-col">
+          <div class="role-badge team">ROL: PROYECTO EN EQUIPO</div>
+          <h3>05 / Oso Anteo (Personaje 3D)</h3>
+          <p>
+            Proyecto desarrollado en equipo universitario relacionado con la Secretaría de Turismo de Norte de Santander. Anteo es un oso diseñado como personaje guía para una experiencia de Realidad Aumentada en el municipio de Salazar de las Palmas.
+          </p>
+
+          <ul class="project-highlights-list">
+            <li>Modelado y texturizado del personaje guía</li>
+            <li>Adaptación del modelo para visualización ligera en WebAR móvil</li>
+            <li>Conexión con experiencia turística y patrimonial</li>
+          </ul>
+
+          <div style="margin-top: var(--space-2); margin-bottom: var(--space-2);">
+            <a href="vr-ar.html#oso-anteo-webar" class="btn btn-secondary btn-sm">
+              Ver experiencia WebAR completa de Salazar &rarr;
+            </a>
+          </div>
+
+          <div class="project-card-tools">
+            <span class="tool-tag">Blender</span>
+            <span class="tool-tag">Unity</span>
+            <span class="tool-tag">Vuforia</span>
+            <span class="tool-tag">WebAR</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 / MicroWorld -->
+      <article id="microworld" class="project-showcase-item">
+        <div class="project-media-col">
+          <div class="project-gallery-grid">
+            <div class="project-gallery-thumb" data-lightbox data-lightbox-group="microworld" data-src="../Recursos/3D/Render%20MicroWorld.jpg" data-title="MicroWorld — Perspectiva Isométrica">
+              <img src="../Recursos/3D/Render%20MicroWorld.jpg" alt="Render 1 MicroWorld estilo nórdico">
+              <div class="thumb-overlay">&#128269; Ver en grande</div>
+            </div>
+            <div class="project-gallery-thumb" data-lightbox data-lightbox-group="microworld" data-src="../Recursos/3D/Render%20MicroWorld2.jpg" data-title="MicroWorld — Detalle de Cabañas y Entorno">
+              <img src="../Recursos/3D/Render%20MicroWorld2.jpg" alt="Render 2 MicroWorld perspectiva secundaria">
+              <div class="thumb-overlay">&#128269; Ver en grande</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-info-col">
+          <div class="role-badge individual">ROL: INDIVIDUAL</div>
+          <h3>06 / MicroWorld (Renders 3ds Max)</h3>
+          <p>
+            Trabajo académico parcial desarrollado individualmente en 3ds Max. Representa un micro mundo isométrico inspirado en el diseño nórdico y pequeñas aldeas vikingas, con cabañas de madera, masas de agua y formaciones montañosas.
+          </p>
+
+          <ul class="project-highlights-list">
+            <li>Modelado de entorno isométrico modular en 3ds Max</li>
+            <li>Iluminación ambiental y renderizado de materiales</li>
+          </ul>
+
+          <div class="project-card-tools">
+            <span class="tool-tag">3ds Max</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 07 / Espada Low Poly -->
+      <article id="espada-low-poly" class="project-showcase-item">
+        <div class="project-media-col">
+          <div class="about-info-box" style="text-align: center; padding: var(--space-10);">
+            <div style="font-size: 3rem; margin-bottom: var(--space-4); color: var(--accent-olive);">&#9876;</div>
+            <h4 style="color: var(--text-primary); font-size: var(--text-xl);">Espada Low Poly.max</h4>
+            <p style="font-size: var(--text-xs); color: var(--text-secondary); margin-bottom: var(--space-4);">
+              Archivo de escena nativo de Autodesk 3ds Max
+            </p>
+            <span class="tool-tag" style="background: rgba(215, 210, 122, 0.1); border-color: var(--accent-olive); color: var(--accent-olive);">
+              Autodesk 3ds Max Scene (.max)
+            </span>
+          </div>
+        </div>
+
+        <div class="project-info-col">
+          <div class="role-badge individual">ROL: INDIVIDUAL</div>
+          <h3>07 / Espada Low Poly</h3>
+          <p>
+            Trabajo académico parcial desarrollado individualmente en 3ds Max. A partir de una referencia de diseño suministrada, se construyó la versión 3D optimizada de la espada manteniendo fidelidad de proporciones y estructura.
+          </p>
+
+          <ul class="project-highlights-list">
+            <li>Modelado de prop académico en 3ds Max</li>
+            <li>Estructuración de geometría y topología poligonal</li>
+          </ul>
+
+          <div class="project-card-tools">
+            <span class="tool-tag">3ds Max</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Pie de página Global -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-sagl">SAGL</span>
+        <p>Sergio Andrés Gómez López &mdash; Ingeniería en Multimedia</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navegación de pie de página">
+        <a href="index.html">Trabajos</a>
+        <a href="../about/index.html">Sobre mí</a>
+        <a href="../contact/index.html">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module">
+    import { init3DViewers } from "../src/js/components/model-viewer-loader.js";
+    import { initLightbox } from "../src/js/components/lightbox.js";
+    
+    init3DViewers();
+    initLightbox();
+  </script>
+  <script type="module" src="../src/js/main.js"></script>
+</body>
+</html>
